@@ -12,11 +12,10 @@ const navItems = [
   { text: "Networking", icon: "🤝", path: "/networking" },
 ];
 
-// Define the header navigation items to be shown only on mobile in the sidebar
 const headerNavItems = [
-  { text: "Home", path: "/dashboard" },
-  { text: "About Us", path: "/aboutus" },
-  { text: "Ask AI", path: "/askai" },
+  { text: "Home", icon: "🏠", path: "/dashboard" },
+  { text: "About Us", icon: "ℹ️", path: "/aboutus" },
+  { text: "Ask AI", icon: "🤖", path: "/askai" },
 ];
 
 function Sidebar({ isOpen, toggle, theme }) {
@@ -71,7 +70,7 @@ function Sidebar({ isOpen, toggle, theme }) {
       <nav>
         <ul className="p-4">
           {/* Header Navigation Links - Visible Only on Mobile */}
-          <div className="block md:hidden">
+          <div className="block md:hidden mb-6">
             {headerNavItems.map((item, index) => (
               <motion.li
                 key={`header-${index}`}
@@ -83,6 +82,7 @@ function Sidebar({ isOpen, toggle, theme }) {
                 whileHover={{ x: 5 }}
                 transition={{ duration: 0.2 }}
               >
+                <span className="mr-3 text-violet-600 dark:text-violet-300">{item.icon}</span>
                 <Link
                   href={item.path}
                   className="text-violet-600 hover:text-violet-800 font-medium dark:text-violet-300 dark:hover:text-violet-100"

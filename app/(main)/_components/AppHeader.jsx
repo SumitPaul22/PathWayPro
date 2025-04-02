@@ -25,7 +25,7 @@ function AppHeader({ theme, toggleTheme, isSidebarOpen, setIsSidebarOpen }) {
         </div>
       </div>
 
-      {/* Navigation Links */}
+      {/* Navigation Links - Hidden on small screens */}
       <nav className="hidden md:flex space-x-6">
         <Link href="/dashboard" className="text-gray-600 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400">
           Home
@@ -40,14 +40,8 @@ function AppHeader({ theme, toggleTheme, isSidebarOpen, setIsSidebarOpen }) {
 
       {/* Right-side Icons */}
       <div className="flex items-center space-x-4">
-        {/* Notifications */}
-        {/* <button className="relative">
-          <BellIcon className="w-6 h-6 text-gray-600 dark:text-gray-300" />
-          <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-0.5 rounded-full">3</span>
-        </button> */}
-
         {/* Theme Toggle */}
-        <button onClick={toggleTheme}>
+        <button onClick={toggleTheme} aria-label="Toggle theme">
           {theme === "light" ? (
             <MoonIcon className="w-6 h-6 text-gray-600" />
           ) : (
