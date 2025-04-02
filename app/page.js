@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           {/* Image Transition Section - Hidden on small screens, visible on md and up */}
-          <div className="relative w-1/2 h-96 hidden sm:block">
+          {/* <div className="relative w-1/2 h-96 hidden sm:block">
             <Image
               src="/image1.jpg"
               alt="Image 1"
@@ -71,7 +71,7 @@ export default function Home() {
               objectFit="cover"
               className="animate-fade-loop-delay"
             />
-          </div>
+          </div> */}
         </div>
 
         {/* Feature Highlights */}
