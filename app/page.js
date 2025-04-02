@@ -26,11 +26,11 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <main className="bg-gray-50 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-24 z-10">
-        <div className="flex flex-row items-center justify-between">
+      <main className="bg-gray-50 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-40 pb-12 sm:pb-24 z-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between">
           {/* Text Section */}
-          <div className="text-left max-w-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 animate-slide-in-top">
+          <div className="text-left max-w-full sm:max-w-2xl">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-6 animate-slide-in-top">
               <span className="block">Navigate Your Future with</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600">
                 AI-Driven Mentorship
