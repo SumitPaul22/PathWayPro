@@ -75,8 +75,14 @@ export default function CSESpecializations() {
             </ul>
           </div>
 
-          <div className="flex-none">
-            <img src="https://mlrit.ac.in/wp-content/uploads/2022/06/ai.jpg" border alt="AI & ML" width={800} height={250} className="rounded-lg shadow-lg" />
+          <div className="flex w-full md:w-auto items-end">
+            <Image
+              src="https://mlrit.ac.in/wp-content/uploads/2022/06/ai.jpg"
+              alt="AI & ML"
+              width={400}
+              height={250}
+              className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -138,8 +144,14 @@ export default function CSESpecializations() {
             </ul>
           </div>
 
-          <div className="flex-none">
-            <img src="https://www.piet.co.in/wp-content/uploads/2022/04/cyber-security-1.png" alt="Cybersecurity" width={800} height={250} className="rounded-lg shadow-lg" />
+          <div className="flex w-full md:w-auto items-end">
+            <Image
+              src="https://www.piet.co.in/wp-content/uploads/2022/04/cyber-security-1.png"
+              alt="Cybersecurity"
+              width={400}
+              height={250}
+              className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -197,8 +209,14 @@ export default function CSESpecializations() {
             </ul>
           </div>
 
-          <div className="flex-none">
-            <img src="https://redefcorp.com/data_img/datasci.jpg" alt="Computer Science & Data Science" width={800} height={250} className="rounded-lg shadow-lg" />
+          <div className="flex w-full md:w-auto items-end">
+            <Image
+              src="https://redefcorp.com/data_img/datasci.jpg"
+              alt="Computer Science & Data Science"
+              width={400}
+              height={250}
+              className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -260,8 +278,14 @@ export default function CSESpecializations() {
             </ul>
           </div>
 
-          <div className="flex-none">
-            <img src="https://bestiu.edu.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1709029458B--Tech-CSE-IOT.webp" alt="Internet of Things" width={800} height={250} className="rounded-lg shadow-lg" />
+          <div className="flex w-full md:w-auto items-end">
+            <Image
+              src="https://bestiu.edu.in/uploads/51ba570fe68fc088e0a942bdf8700cdce7eb8b1d/1709029458B--Tech-CSE-IOT.webp"
+              alt="Internet of Things"
+              width={400}
+              height={250}
+              className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -323,8 +347,14 @@ export default function CSESpecializations() {
             </ul>
           </div>
 
-          <div className="flex-none">
-            <img src="https://francisxavier.ac.in/cs-content/uploads/blog_2024/blog/csbs_blog.jpg" alt="Computer Science & Business Systems" width={800} height={250} className="rounded-lg shadow-lg" />
+          <div className="flex w-full md:w-auto items-end">
+            <Image
+              src="https://francisxavier.ac.in/cs-content/uploads/blog_2024/blog/csbs_blog.jpg"
+              alt="Computer Science & Business Systems"
+              width={400}
+              height={250}
+              className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
           </div>
         </div>
       </section>

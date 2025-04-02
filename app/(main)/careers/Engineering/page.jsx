@@ -44,7 +44,7 @@ export default function Engineering() {
         <Card className="bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow">
           <CardHeader>
             <img
-              src="https://talentsprint.com/course/ai-machine-learning-iiit-hyderabad/images/header-graphic-aiml.webp"
+              src="https://www.chitkara.edu.in/blogs/wp-content/uploads/2022/11/Computer-Science-Courses.jpg"
               alt="Specializations of Computer Science and Engineering"
               className="w-full h-48 object-cover rounded-t-lg"
             />
