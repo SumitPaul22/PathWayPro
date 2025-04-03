@@ -94,7 +94,7 @@ export default function QuizPage({ theme }) {
   // Loading result state
   if (isLoadingResult) {
     return (
-      <div className={`min-h-screen flex items-center justify-center ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
+      <div className={`min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -113,7 +113,7 @@ export default function QuizPage({ theme }) {
   // Result display
   if (result) {
     return (
-      <div className={`min-h-screen flex items-center justify-center ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
+      <div className={`min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
