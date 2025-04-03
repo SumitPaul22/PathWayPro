@@ -43,7 +43,7 @@ export default function QuizPage({ theme }) {
   // No questions available
   if (questions === null || questions.length === 0) {
     return (
-      <div className={`min-h-screen flex items-center justify-center ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
+      <div className={`bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
         <p className="text-lg text-red-600 dark:text-red-400">No questions available.</p>
       </div>
     );
