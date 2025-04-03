@@ -22,6 +22,7 @@ import {
   NewspaperIcon,
   ClockIcon,
 } from "lucide-react";
+import { QuestionMarkIcon } from "@radix-ui/react-icons";
 
 function Dashboard({ theme }) {
   const pathname = usePathname();
@@ -57,14 +58,13 @@ function Dashboard({ theme }) {
     <div className={`min-h-screen flex flex-col ${theme === "dark" ? "bg-gray-900" : "bg-gray-100"}`}>
       <div className="bg-white dark:bg-gray-800 flex flex-1">
         <main className="flex-1 p-6">
-          {/* Welcome Section (unchanged) */}
+          {/* Welcome Section */}
           <motion.div
             className="relative mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <BorderBeam />
             <div className="bg-gradient-to-r from-violet-600 to-indigo-600 p-6 rounded-xl shadow-xl text-white">
               <h2 className="text-3xl font-bold mb-4">Welcome back, [User]!</h2>
               <p className="mb-4">Ready to take the next step in your career journey?</p>
@@ -98,10 +98,11 @@ function Dashboard({ theme }) {
               >
                 Start Mentorship Session
               </motion.button>
+              <BorderBeam duration={8} size={100} />
             </div>
           </motion.div>
 
-          {/* Career Options (unchanged) */}
+          {/* Career Options */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -117,10 +118,10 @@ function Dashboard({ theme }) {
                 icon: <NewspaperIcon className="w-8 h-8 text-violet-600 dark:text-violet-300" />,
               },
               {
-                title: "Recent Activity",
-                description: 'You completed the "Effective Communication" module yesterday.',
-                button: "View Details",
-                icon: <ClockIcon className="w-8 h-8 text-violet-600 dark:text-violet-300" />,
+                title: "Assesment Test",
+                description: 'Confused about what career to choose? Take a test.',
+                button: <Link href="/quiz">Click Here!</Link>,
+                icon: <QuestionMarkIcon className="w-8 h-8 text-violet-600 dark:text-violet-300" />,
               },
             ].map((card, index) => (
               <motion.div
@@ -177,13 +178,13 @@ function Dashboard({ theme }) {
                         ({career.opportunities} possible opportunities)
                       </p>
                       <Link href={career.path}>
-                        <motion.a
+                        <motion.div
                           className="bg-violet-600 text-white px-4 py-2 rounded-lg hover:bg-violet-700 font-medium dark:bg-violet-500 dark:hover:bg-violet-600"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
                           Explore
-                        </motion.a>
+                        </motion.div>
                       </Link>
                     </CardContent>
                   </Card>
@@ -192,7 +193,7 @@ function Dashboard({ theme }) {
             </motion.div>
           </motion.div>
 
-          {/* Call-to-Action Section (unchanged) */}
+          {/* Call-to-Action Section */}
           <motion.div
             className="mt-6 bg-violet-100 p-6 rounded-xl shadow-md text-center dark:bg-violet-800"
             initial={{ opacity: 0, y: 20 }}

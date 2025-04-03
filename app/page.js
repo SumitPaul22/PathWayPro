@@ -11,7 +11,7 @@ import { SunIcon } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 relative overflow-hidden">
+    <div className="flex flex-col min-h-screen bg-gray-50 relative overflow-hidden">
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-30 border-b border-gray-100/50 bg-white/80 backdrop-blur-sm">
         <div className="max-w-auto mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
@@ -25,9 +25,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <main className="bg-gray-50 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-40 pb-12 sm:pb-24 z-10">
-        <div className="flex flex-col sm:flex-row items-center justify-between">
+      {/* Main Content */}
+      <main className="flex-1 bg-gray-50 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-40 pb-12 sm:pb-24 z-10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-8">
           {/* Text Section */}
           <div className="text-left max-w-full sm:max-w-2xl">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-6 animate-slide-in-top">
@@ -38,7 +38,7 @@ export default function Home() {
             </h1>
 
             <TypingAnimation className="text-xl md:text-2xl text-gray-600 mb-12 animate-fade-in delay-300 leading-relaxed">
-              PathWayPro brings this program for all class 11 & 12 students,college students to overcome a wide variety of confusions,
+              PathWayPro brings this program for all class 11 & 12 students, college students to overcome a wide variety of confusions,
               issues and provide ultimate guidance to take them to their ultimate goal.
             </TypingAnimation>
 
@@ -56,22 +56,24 @@ export default function Home() {
           </div>
 
           {/* Image Transition Section - Hidden on small screens, visible on md and up */}
-          {/* <div className="relative w-1/2 h-96 hidden sm:block">
-            <Image
-              src="/image1.jpg"
-              alt="Image 1"
-              layout="fill"
-              objectFit="cover"
-              className="animate-fade-loop"
-            />
-            <Image
-              src="/image2.jpg"
-              alt="Image 2"
-              layout="fill"
-              objectFit="cover"
-              className="animate-fade-loop-delay"
-            />
-          </div> */}
+          <div className="relative w-full sm:w-1/2 hidden md:block">
+            <div className="relative aspect-[4/3] w-full">
+              <Image
+                src="/image1.jpg"
+                alt="Image 1"
+                width={600}
+                height={450}
+                className="object-cover rounded-lg animate-fade-loop"
+              />
+              <Image
+                src="/image2.jpg"
+                alt="Image 2"
+                width={600}
+                height={450}
+                className="object-cover rounded-lg animate-fade-loop-delay absolute inset-0"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Feature Highlights */}
