@@ -77,7 +77,7 @@ export default function Home() {
         </div>
 
         {/* Feature Highlights */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto animate-fade-in delay-900">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 sm:grid-cols-5 gap-10 max-w-5xl mx-auto animate-fade-in delay-900">
           <FeatureCard
             title="Personalized Guidance"
             description="AI-crafted advice tailored to your career goals."
