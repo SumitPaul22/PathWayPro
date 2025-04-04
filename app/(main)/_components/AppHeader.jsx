@@ -19,8 +19,12 @@ function AppHeader({ theme, toggleTheme, isSidebarOpen, setIsSidebarOpen }) {
         >
           {isSidebarOpen ? <XIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
         </motion.button>
-        <Image src="/logo.svg" alt="logo" width={40} height={40} />
-        <div className="text-black dark:text-white font-bold text-xl tracking-wide">
+        <img
+          src="http://localhost:3000/logo.svg"
+          alt="Logo"
+          style={{ width: "auto", height: "30px" }} // Adjust height as needed
+        />
+        <div className="text-black dark:text-white font-bold text-2xl tracking-wide">
           <a href="/dashboard">PathWayPro</a>
         </div>
       </div>
