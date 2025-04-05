@@ -101,7 +101,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p>© 2025 PathWayPro. All rights reserved.</p>
           <div className="mt-4 space-x-4">
-            <Link href="/about" className="hover:text-green-400">About</Link>
+            <Link href="/aboutus" className="hover:text-green-400">About</Link>
             <Link href="/privacy" className="hover:text-green-400">Privacy</Link>
             <Link href="/terms" className="hover:text-green-400">Terms</Link>
           </div>
